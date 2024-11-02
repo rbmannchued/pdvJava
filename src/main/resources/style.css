@@ -1,0 +1,12 @@
+.vbox{
+    -fx-background-color: blue;
+}
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: darkslategray;
+
+
+}
+.button:hover{-fx-background-color: rgb(60, 120, 192)}
+.button:pressed{-fx-background-color: white}
+
