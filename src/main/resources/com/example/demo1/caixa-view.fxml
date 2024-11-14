@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.CaixaController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Ponto de Venda" style="-fx-font-family: 'Arial'; -fx-font-size: 20px; -fx-font-weight: bold;" layoutX="10" layoutY="10">
+    </Label>
+    <VBox spacing="10">
+        <HBox  spacing="20.0" >
+            <Label>Código</Label>
+            <Label>Quantidade</Label>
+        </HBox>
+        <HBox spacing="20.0" >
+            <TextField maxWidth="40"/>
+            <TextField maxWidth="40"/>
+        </HBox>
+        <Label text="Produto" fx:id="lblDisplayProduto"/>
+        <Button text="Adicionar à lista" prefWidth="200"/>
+        <Label text="Lista de Produtos: "/>
+        <ListView prefHeight="150"/>
+        <Button text="Excluir" style="-fx-background-color: rgb(184,78,78)"/>
+        <HBox spacing="20">
+            <VBox>
+                <Label text="Total: "/>
+                <Label text="R$ " style="-fx-font-weight: bold;"/>
+            </VBox>
+            <VBox>
+                <Label text="Valor Pago: "/>
+                <TextField prefWidth="40"/>
+            </VBox>
+            <VBox>
+                <Label text="Troco: "/>
+                <Label text="R$ " style="-fx-font-weight: bold;"/>
+            </VBox>
+
+
+
+        </HBox>
+
+    </VBox>
+
+</VBox>

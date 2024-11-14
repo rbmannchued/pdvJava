@@ -19,7 +19,7 @@
             <Image url="@../../../images/logoBatatao.png"/>
         </image>
     </ImageView>
-    <Button text="Caixa" onAction="#onHelloButtonClick"/>
+    <Button text="Caixa" onAction="#onCaixaButtonClick"/>
     <Button text="Verificador Preço" onAction="#onVerificarButtonClick"/>
     <Button text="Sobre o Sistema" onAction="#onSobreButtonClick"/>
     <Button text="Sair" onAction="#onSairButtonClick"/>

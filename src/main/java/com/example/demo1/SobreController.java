@@ -1,5 +1,5 @@
 package com.example.demo1;
 
-public class SobreView {
+public class SobreController {
 
 }
