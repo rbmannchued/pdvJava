@@ -24,7 +24,7 @@
         <Button text="Adicionar à lista" prefWidth="200"/>
         <Label text="Lista de Produtos: "/>
         <ListView prefHeight="150"/>
-        <Button text="Excluir" style="-fx-background-color: rgb(184,78,78)"/>
+        <Button text="Excluir" style="-fx-background-color: rgb(184,78,78); -fx-font-weight: bold;"/>
         <HBox spacing="20">
             <VBox>
                 <Label text="Total: "/>
