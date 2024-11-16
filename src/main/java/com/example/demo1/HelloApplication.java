@@ -32,10 +32,12 @@ public class HelloApplication extends Application {
 
             // Cria a tabela produtos
             String createTableSQL = "CREATE TABLE IF NOT EXISTS produtos (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT," +
-                    "nome TEXT NOT NULL," +
-                    "quant INTEGER NOT NULL)";
+                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    "nome TEXT NOT NULL, " +
+                    "quant INTEGER NOT NULL," +
+                    "preco REAL NOT NULL);";
             stmt.execute(createTableSQL);
+//            System.out.println("Tabela 'produtos' criada com sucesso!");
 
             stmt.close();
             conn.close();
@@ -43,7 +45,7 @@ public class HelloApplication extends Application {
             e.printStackTrace();
         }
 
-                SQLiteConnection.insertProd("Pao de batat", 20);
+                SQLiteConnection.insertProd("Pao de batat", 20, 12.52);
 
 
 

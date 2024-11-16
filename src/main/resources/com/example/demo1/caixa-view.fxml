@@ -17,26 +17,26 @@
             <Label>Quantidade</Label>
         </HBox>
         <HBox spacing="20.0" >
-            <TextField maxWidth="40"/>
-            <TextField maxWidth="40"/>
+            <TextField maxWidth="40" fx:id="tfId" onKeyTyped="#onIdTyped"/>
+            <TextField maxWidth="40" fx:id="tfQuant"/>
         </HBox>
         <Label text="Produto" fx:id="lblDisplayProduto"/>
-        <Button text="Adicionar à lista" prefWidth="200"/>
+        <Button text="Adicionar à lista" prefWidth="200" onMouseClicked="#onAddProd"/>
         <Label text="Lista de Produtos: "/>
-        <ListView prefHeight="150"/>
-        <Button text="Excluir" style="-fx-background-color: rgb(184,78,78); -fx-font-weight: bold;"/>
+        <ListView prefHeight="150" fx:id="lvProds"/>
+        <Button text="Excluir" style="-fx-background-color: rgb(184,78,78); -fx-font-weight: bold;" onMouseClicked="#onExcluir"/>
         <HBox spacing="20">
             <VBox>
                 <Label text="Total: "/>
-                <Label text="R$ " style="-fx-font-weight: bold;"/>
+                <Label text="R$ " style="-fx-font-weight: bold;" fx:id="lblTotal"/>
             </VBox>
             <VBox>
                 <Label text="Valor Pago: "/>
-                <TextField prefWidth="40"/>
+                <TextField prefWidth="40" fx:id="tfPago" onKeyTyped="#onPagoTyped"/>
             </VBox>
             <VBox>
                 <Label text="Troco: "/>
-                <Label text="R$ " style="-fx-font-weight: bold;"/>
+                <Label text="R$ " style="-fx-font-weight: bold;" fx:id="lblTroco"/>
             </VBox>
 
 

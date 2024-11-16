@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Caixa extends Stage {
     public Caixa() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("caixa-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 500);
+        Scene scene = new Scene(fxmlLoader.load(), 500, 500);
         Stage stage = new Stage();
         stage.setTitle("Caixa");
         stage.setScene(scene);
