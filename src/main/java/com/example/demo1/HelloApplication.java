@@ -18,7 +18,7 @@ public class HelloApplication extends Application {
 
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 450, 450);
+        Scene scene = new Scene(fxmlLoader.load(), 600 , 600);
         scene.getStylesheets().add(getClass().getResource("/style.css").toExternalForm());
         stage.setTitle("Main");
 
@@ -45,7 +45,7 @@ public class HelloApplication extends Application {
             e.printStackTrace();
         }
 
-                SQLiteConnection.insertProd("Pao de batat", 20, 12.52);
+                SQLiteConnection.insertProd("Pao de batata", 20, 10.75);
 
 
 

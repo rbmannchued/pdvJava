@@ -7,6 +7,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.chart.BarChart?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.demo1.HelloController">
     <padding>
@@ -19,8 +20,9 @@
             <Image url="@../../../images/logoBatatao.png"/>
         </image>
     </ImageView>
+    <Button text="Adicionar Produto" onAction="#onAddProd"/>
     <Button text="Caixa" onAction="#onCaixaButtonClick"/>
-    <Button text="Verificador Preço" onAction="#onVerificarButtonClick"/>
+    <Button text="Verificador Preço" onAction="#onVerificadorButtonClick"/>
     <Button text="Sobre o Sistema" onAction="#onSobreButtonClick"/>
     <Button text="Sair" onAction="#onSairButtonClick"/>
 

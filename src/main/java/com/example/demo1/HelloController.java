@@ -22,13 +22,17 @@ public class HelloController {
 
     }
     @FXML
-    protected void onVerificarButtonClick(){
-
+    protected void onVerificadorButtonClick() throws IOException {
+        new VerificadorPreco();
     }
 
     @FXML
     protected void onCaixaButtonClick() throws IOException {
         new Caixa();
 
+    }
+    @FXML
+    protected void onAddProd() throws IOException{
+        new AddProd();
     }
 }
