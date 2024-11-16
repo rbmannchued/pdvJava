@@ -45,8 +45,6 @@ public class HelloApplication extends Application {
             e.printStackTrace();
         }
 
-                SQLiteConnection.insertProd("Pao de batata", 20, 10.75);
-
 
 
     }

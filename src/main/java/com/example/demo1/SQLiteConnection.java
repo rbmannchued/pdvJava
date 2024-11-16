@@ -22,7 +22,7 @@ public class SQLiteConnection {
     }
 
     public static ResultSet getProd() throws SQLException {
-        String sql = "SELECT * FROM produtos";
+        String sql = "SELECT * FROM produtos ORDER BY id DESC";
         Connection conn = connect();
         Statement stmt = conn.createStatement();
         return stmt.executeQuery(sql);

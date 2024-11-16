@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.AddProdController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Adicionar Produto" style="-fx-font-family: 'Arial'; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+    <HBox spacing="20.0">
+        <VBox>
+            <Label text="Nome:"/>
+            <TextField maxWidth="80" fx:id="tfNome"/>
+        </VBox>
+        <VBox>
+            <Label text="Quant: "/>
+            <TextField maxWidth="80" fx:id="tfQuant"/>
+        </VBox>
+        <VBox>
+            <Label text="Preço: "/>
+            <TextField maxWidth="80" fx:id="tfPreco"/>
+        </VBox>
+
+
+
+    </HBox>
+    <Button text="Adicionar" style="-fx-background-color: rgb(31,109,133); -fx-font-weight: bold" onAction="#onAdd" alignment="TOP_RIGHT"/>
+    <TableView fx:id="tvProd"/>
+</VBox>
