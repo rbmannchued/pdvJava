@@ -4,9 +4,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.demo1.SobreController"
-            prefHeight="400.0" prefWidth="600.0">
-<Label>Sistema Oficial da rede Batatão, a maior loja de \n legumes da face da terra!</Label>
-</AnchorPane>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.HelloController">
+    <center>
+        <VBox alignment="CENTER">
+            <ImageView fitHeight="150" fitWidth="150"
+                       pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/logoBatatao.png"/>
+            </ImageView>
+            <Label text="Versão 1.0.0" style="-fx-font-family: 'Arial'; "/>
+            <Label text="Desenvolvedor: Rafael Bormann Chuede"/>
+            <Label text="Email: rafaelbormannc@gmail.com"/>
+
+
+
+        </VBox>
+    </center>
+
+
+</BorderPane>

@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 
+
 public class HelloController {
     @FXML
     private Label welcomeText;
@@ -35,4 +36,6 @@ public class HelloController {
     protected void onAddProd() throws IOException{
         new AddProd();
     }
+
+
 }

@@ -1,12 +1,28 @@
-.vbox{
-    -fx-background-color: blue;
+/* style.css */
+
+/* Define o fundo da janela principal (root) com uma imagem */
+.root {
+    -fx-background-image: url("images/background.jpg");  /* Caminho relativo para a imagem na pasta resources */
+    -fx-background-size: cover;                         /* Faz a imagem cobrir toda a área */
+    -fx-background-position: center center;              /* Centraliza a imagem de fundo */
+    -fx-background-repeat: no-repeat;                    /* Impede que a imagem se repita */
 }
+
+/* Define a cor de fundo do VBox */
+.vbox {
+    -fx-background-color: blue;  /* Cor de fundo do VBox, substitui o fundo da imagem, se aplicável */
+}
+
+/* Estilos para o botão */
 .button {
-    -fx-text-fill: white;
-    -fx-background-color: darkslategray;
-
-
+    -fx-text-fill: white;              /* Cor do texto do botão */
+    -fx-background-color: darkslategray; /* Cor de fundo do botão */
 }
-.button:hover{-fx-background-color: rgb(60, 120, 192)}
-.button:pressed{-fx-background-color: white}
 
+.button:hover {
+    -fx-background-color: rgb(60, 120, 192);  /* Cor de fundo quando o botão é hover */
+}
+
+.button:pressed {
+    -fx-background-color: white;   /* Cor de fundo quando o botão é pressionado */
+}

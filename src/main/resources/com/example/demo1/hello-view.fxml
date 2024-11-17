@@ -2,28 +2,54 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<?import javafx.scene.chart.BarChart?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.demo1.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
 
-    <Label fx:id="welcomeText"/>
-    <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-        <image>
-            <Image url="@../../../images/logoBatatao.png"/>
-        </image>
-    </ImageView>
-    <Button text="Adicionar Produto" onAction="#onAddProd"/>
-    <Button text="Caixa" onAction="#onCaixaButtonClick"/>
-    <Button text="Verificador Preço" onAction="#onVerificadorButtonClick"/>
-    <Button text="Sobre o Sistema" onAction="#onSobreButtonClick"/>
-    <Button text="Sair" onAction="#onSairButtonClick"/>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.HelloController">
 
-</VBox>
+    <!-- MenuBar no topo -->
+    <top>
+        <MenuBar>
+            <!-- Menu Arquivo -->
+            <Menu text="Funcionalidades">
+                <MenuItem text="Adicionar Produtos" onAction="#onAddProd"/>
+                <MenuItem text="Caixa" onAction="#onCaixaButtonClick"/>
+                <MenuItem text="Verificar Preços" onAction="#onVerificadorButtonClick"/>
+                <MenuItem text="Sair" onAction="#onSairButtonClick"/>
+            </Menu>
+
+            <!-- Menu Ajuda -->
+            <Menu text="Ajuda">
+                <MenuItem text="Sobre" onAction="#onSobreButtonClick"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Conteúdo principal (VBox com botões) -->
+    <center>
+        <VBox alignment="CENTER" spacing="20.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+
+            <Label fx:id="welcomeText"/>
+            <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../images/logoBatatao.png"/>
+                </image>
+            </ImageView>
+            <Button text="Adicionar Produto" onAction="#onAddProd"/>
+            <Button text="Caixa" onAction="#onCaixaButtonClick"/>
+            <Button text="Verificador Preço" onAction="#onVerificadorButtonClick"/>
+            <Button text="Sobre o Sistema" onAction="#onSobreButtonClick"/>
+            <Button text="Sair" onAction="#onSairButtonClick"/>
+        </VBox>
+    </center>
+
+</BorderPane>
